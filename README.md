@@ -1,0 +1,2 @@
+# solo
+education on Sololearn
