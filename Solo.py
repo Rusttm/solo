@@ -1,8 +1,9 @@
 import pandas as pd
-df=pd.read_csv('https://sololearn.com/uploads/files/titanic.csv')
-small_df=df[['Age','Sex']]
-arr=df[['Pclass', 'Fare', 'Age']].values
+import os
+import configparser  # импортируем библиотеку
+configure = configparser.ConfigParser()  # создаём объекта парсера
+configure.read('config.ini')  # читаем конфиг
 
-
-
-print(arr[:,:])
+#configure['Mainer']['data2']='mydata'
+a=configure['Mainer']['data']
+print(a)
